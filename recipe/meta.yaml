@@ -8,8 +8,6 @@ package:
 source:
   url: https://s3.openkim.org/archives/collection/{{ name }}-{{ version|replace('.', '-') }}.txz
   sha256: 50338084ece92ec0fb13b0bbdf357b5d7450e26068ba501f23c315f814befc26
-  patches: 
-    - cmake.patch
 
 build:
   number: 2
