@@ -1,0 +1,22 @@
+From 3225a9cc67de61fd3a1054f5e5b31eaeec350a6e Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Thu, 3 Dec 2020 11:43:28 +0100
+Subject: [PATCH] Update CMakeLists.txt
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 427a045..b8d122a 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -31,7 +31,7 @@
+ cmake_minimum_required(VERSION 3.4)
+ 
+ list(APPEND CMAKE_PREFIX_PATH $ENV{KIM_API_CMAKE_PREFIX_DIR})
+-find_package(KIM-API 2.0 REQUIRED CONFIG)
++find_package(KIM-API 2.2 REQUIRED CONFIG)
+ if(NOT TARGET kim-api)
+   enable_testing()
+   project("${KIM_API_PROJECT_NAME}" VERSION "${KIM_API_VERSION}"
