@@ -22,9 +22,9 @@ requirements:
     - make
     - vim
   host:
-    - kim-api
+    - kim-api >= 2.2.1
   run:
-    - kim-api
+    - kim-api >= 2.2.1
 
 test:
   commands:
