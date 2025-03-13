@@ -18,13 +18,14 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
+    - {{ stdlib("c") }}
     - cmake
     - make
     - vim
   host:
-    - kim-api >=2.2.1 <=2.3.0
+    - kim-api >=2.2.1,<=2.3.0
   run:
-    - kim-api >=2.2.1 <=2.3.0
+    - kim-api >=2.2.1,<=2.3.0
 
 test:
   commands:
@@ -44,7 +45,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - brendonwaters
     - jan-janssen
     - ellio167
     - ilia-nikiforov-umn
