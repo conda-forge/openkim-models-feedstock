@@ -10,7 +10,7 @@ source:
   sha256: 8824adee02ae4583bd378cc81140fbb49515c5965708ee98d856d122d48dd95f
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -18,13 +18,14 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
+    - {{ stdlib("c") }}
     - cmake
     - make
     - vim
   host:
-    - kim-api >=2.2.1
+    - kim-api >=2.2.1,<=2.3.0
   run:
-    - kim-api >=2.2.1
+    - kim-api >=2.2.1,<=2.3.0
 
 test:
   commands:
@@ -44,6 +45,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - brendonwaters
     - jan-janssen
     - ellio167
+    - ilia-nikiforov-umn
